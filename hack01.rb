@@ -1,6 +1,6 @@
 def input
 	user_input = gets.chomp
-	user_input
+	user_input.downcase
 end
 
 def is_input_valid?(input_string)
@@ -80,5 +80,6 @@ puts "You have entered: "+user_input
 
 #Compute the output
 output = compute(user_input)
+puts "Output: "
 puts output.flatten.sort.uniq # Make the recieved array into a single array(flatten),
 							  #  sort it, remove dupicates and show the output
